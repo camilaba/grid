@@ -1,0 +1,48 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+	}
+
+
+body {
+	display:grid;
+	grid-template-columns: 30% 30% 40%;
+	grid-template-rows: 300px 200px; 
+	grid-gap: 20px;
+	grid-template-areas: "header header aside "
+					     "main main_1 aside_2"
+
+}	
+
+.uno {
+	grid-area: header;
+	background:cornsilk;
+	padding: 20px;
+
+}
+
+.dos {
+	grid-area: aside;
+	background:Lavender;
+	padding: 20px;
+	align-items: center;
+}
+
+.tres {
+	grid-area: main;
+	background:lightblue;
+	padding: 20px;
+}
+
+.cuatro {
+	grid-area: main_1;
+	background:grey;
+	padding: 20px;
+}
+
+.cinco{
+	grid-area: aside_2;
+	background:slateblue;
+	padding: 20px;
+}
